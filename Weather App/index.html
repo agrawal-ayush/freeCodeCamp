@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+
+<script src="app.js"></script>
+</head>
+
+<body ng-app="WeatherApp" id="mainBody">
+	<div class="container-fluid text-center" ng-controller="WeatherAppController" style="margin: 140px 50px 50px;">
+		<h1 class="display-4">Local Weather Application</h1>
+		<h2 class="display-4">
+		{{weatherData.location}} <br/>
+		<span>{{weatherData.temp}}  <a ng-click="toggleWeather()" class="btn btn-danger">Change</a><br/> </span> 
+		{{weatherData.description}} 
+		<img ng-src="{{weatherData.iconURL}}" alt="Description" height="80" width="80" />
+		</h2>
+		
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>

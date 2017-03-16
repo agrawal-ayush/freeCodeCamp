@@ -1,0 +1,10 @@
+body .container-fluid {
+	margin : 50px 150px 20px 150px;
+}
+.form-group a{
+	margin-top : 10px;
+}
+
+.jumbotron:hover {
+	background-color : #DAE8EE;
+}

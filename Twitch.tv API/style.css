@@ -1,0 +1,28 @@
+body {
+	margin : 30px 250px 0px 250px;
+}
+
+#header {
+	background-color: #DDE0E2;
+}
+
+row {
+	padding:  10px;
+}
+
+img {
+	padding: 5px;
+}
+
+.fa-times{
+	color: red;
+
+}
+
+.fa-exclamation {
+	color: grey;
+}
+
+.fa-check{
+	color: green;
+}
